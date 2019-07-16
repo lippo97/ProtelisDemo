@@ -13,6 +13,7 @@ public class HelloProtelis {
 
     private final static String protelisModuleName = "hello";
     private final static int N = 5;
+    private final static int iterations = 3;
     private final static List<Device> devices = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -40,7 +41,7 @@ public class HelloProtelis {
         // Let the devices know the network topology
         devices.forEach(d -> d.setNetwork(g));
         // Let the devices execute 3 times
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < iterations; i++) {
             devices.forEach(Device::runCycle);
             devices.forEach(Device::sendMessages);
         }

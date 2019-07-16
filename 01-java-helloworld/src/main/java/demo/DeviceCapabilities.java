@@ -11,7 +11,7 @@ public class DeviceCapabilities extends AbstractExecutionContext {
 
     public DeviceCapabilities(final int uid, final NetworkManager ntmgr) {
         super(new SimpleExecutionEnvironment(), ntmgr);
-        this.uid = new MyDeviceUIDImpl(uid);
+        this.uid = new MyDeviceUID(uid);
     }
 
     public void announce(String msg) {

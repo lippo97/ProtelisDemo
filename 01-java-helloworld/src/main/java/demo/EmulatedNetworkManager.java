@@ -13,7 +13,7 @@ public class EmulatedNetworkManager implements NetworkManager {
     private final DeviceUID uid;
 
     public EmulatedNetworkManager(int uid) {
-        this.uid = new MyDeviceUIDImpl(uid);
+        this.uid = new MyDeviceUID(uid);
         messages = new HashMap<>();
     }
 
