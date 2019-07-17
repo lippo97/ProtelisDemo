@@ -10,13 +10,13 @@ import java.net.Socket
 import java.net.SocketTimeoutException
 import kotlin.concurrent.thread
 
-class SocketNetworkManager(private val uid: DeviceUID, private val port: Int) : NetworkManager {
+class SocketNetworkManager(private val uid: DeviceUID, private val port: Int, private val neighbors: Set<IPv4Host>) : MyNetworkManager {
     private val timeout = 1000
     private var toBeSent: Map<CodePath, Any> = emptyMap()
     private var messages: Map<DeviceUID, Map<CodePath, Any>> = emptyMap()
     private var running = false
 
-    fun run() {
+    fun listen() {
         running = true
         val server = ServerSocket(port).also { it.soTimeout = timeout }
         thread {
@@ -26,7 +26,6 @@ class SocketNetworkManager(private val uid: DeviceUID, private val port: Int) : 
                 } catch (e: SocketTimeoutException) { }
             }
         }
-        println("Server running at localhost:$port")
     }
 
     fun stop() {
@@ -47,7 +46,7 @@ class SocketNetworkManager(private val uid: DeviceUID, private val port: Int) : 
         messages += Pair(src, msg)
     }
 
-    fun sendMessage(neighbors: Set<IPv4Host>) {
+    override fun sendMessages() {
         neighbors.forEach {
             val socket = Socket(it.host, it.port)
             val stream = ObjectOutputStream(socket.getOutputStream())

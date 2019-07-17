@@ -1,5 +1,6 @@
 package demo
 
+import org.jgrapht.Graphs
 import org.jgrapht.graph.DefaultEdge
 import org.jgrapht.graph.DefaultUndirectedGraph
 import org.protelis.lang.ProtelisLoader
@@ -11,22 +12,18 @@ class HelloProtelis {
     private val devices = ArrayList<Device>()
 
     fun hello() {
-        val network = initializeNetwork()
-        // Set the leader
+        initializeNetwork()
         setLeader(0)
-        devices.forEach {
-            it.network = network
-        }
         syncRunNTimes(3)
     }
 
-    private fun initializeNetwork() : DefaultUndirectedGraph<Device, DefaultEdge> {
+    private fun initializeNetwork() {
         // Initialize a graph
         val g = DefaultUndirectedGraph<Device, DefaultEdge>(DefaultEdge::class.java)
         // Initialize n nodes
         repeat(n) {
             val program = ProtelisLoader.parse(protelisModuleName)
-            val d = Device(program, it)
+            val d = Device(program, it, EmulatedNetworkManager(IntDeviceUID(it)))
             devices.add(d)
             g.addVertex(d)
         }
@@ -36,7 +33,7 @@ class HelloProtelis {
                     devices[it],
                     devices[(it + 1) % n])
         }
-        return g
+        devices.forEach { (it.netmgr as EmulatedNetworkManager).neighbors = Graphs.neighborSetOf(g, it) }
     }
 
     private fun setLeader(id: Int) =

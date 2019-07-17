@@ -13,23 +13,23 @@ class Main {
     private val nodes = config[ProtelisConfigSpec.nodes]
 
     fun hello() {
+        // Initialize some nodes.
         nodes.forEach {
+            val socketNetworkManager = SocketNetworkManager(IntDeviceUID(it.id), it.hostandport.port, it.neighbors).also { it.listen() }
             val program = ProtelisLoader.parse(protelisModuleName)
-            val node = Device(program, it.id, it.hostandport.port)
+            val node = Device(program, it.id, socketNetworkManager)
             if (it.leader) {
                 node.deviceCapabilities.executionEnvironment.put("leader", true)
             }
-            node.neighbors = it.neighbors
-            node.runNetwork()
             devices += node
         }
-
+        // Let the nodes make some iterations.
         repeat(iterations) {
             devices.forEach { it.runCycle() }
-            devices.forEach { it.sendMessage() }
+            devices.forEach { it.sendMessages() }
         }
-
-        devices.forEach { it.stopNetwork() }
+        // Close the thread listening.
+        devices.forEach { (it.netmgr as SocketNetworkManager).stop() }
     }
 }
 

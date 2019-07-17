@@ -1,21 +1,15 @@
 package demo
 
-import org.jgrapht.Graphs
-import org.jgrapht.graph.DefaultEdge
-import org.jgrapht.graph.DefaultUndirectedGraph
+import com.google.common.hash.Hashing
+import org.protelis.vm.NetworkManager
 import org.protelis.vm.ProtelisProgram
 import org.protelis.vm.ProtelisVM
+import org.protelis.vm.impl.HashingCodePathFactory
 
-class Device(program: ProtelisProgram, uid: Int) {
-    val netmgr = EmulatedNetworkManager(IntDeviceUID(uid))
-    val deviceCapabilities = DeviceCapabilities(uid, netmgr)
+class Device(program: ProtelisProgram, uid: Int, val netmgr: MyNetworkManager) {
+    val deviceCapabilities = DeviceCapabilities(uid, netmgr, HashingCodePathFactory(Hashing.sha256()))
     private val vm = ProtelisVM(program, deviceCapabilities)
-    var network = DefaultUndirectedGraph<Device, DefaultEdge>(DefaultEdge::class.java)
-
-    init {
-        network.addVertex(this)
-    }
 
     fun runCycle() = this.vm.runCycle()
-    fun sendMessages() = this.netmgr.sendMessages(Graphs.neighborSetOf(network, this))
+    fun sendMessages() = this.netmgr.sendMessages()
 }

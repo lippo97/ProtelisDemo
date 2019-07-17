@@ -2,9 +2,9 @@ package demo
 
 import org.protelis.lang.datatype.DeviceUID
 import org.protelis.vm.CodePath
-import org.protelis.vm.NetworkManager
 
-class EmulatedNetworkManager(private val uid : DeviceUID) : NetworkManager {
+class EmulatedNetworkManager(private val uid : DeviceUID, var neighbors: Set<Device> = emptySet()) : MyNetworkManager {
+
     private var toBeSent: Map<CodePath, Any> = emptyMap()
     private var messages: Map<DeviceUID, Map<CodePath, Any>> = emptyMap()
 
@@ -12,9 +12,9 @@ class EmulatedNetworkManager(private val uid : DeviceUID) : NetworkManager {
         messages += Pair(src, msg)
     }
 
-    fun sendMessages(neighbors: Set<Device>) {
+    override fun sendMessages() {
         if (toBeSent.isNotEmpty()) {
-            neighbors.forEach { it.netmgr.receiveMessage(uid, toBeSent) }
+            neighbors.forEach { (it.netmgr as EmulatedNetworkManager).receiveMessage(uid, toBeSent) }
         }
     }
 

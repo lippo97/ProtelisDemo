@@ -1,11 +1,13 @@
 package demo
 
+import org.protelis.vm.CodePathFactory
 import org.protelis.vm.NetworkManager
 import org.protelis.vm.impl.AbstractExecutionContext
+import org.protelis.vm.impl.DefaultTimeEfficientCodePath
 import org.protelis.vm.impl.SimpleExecutionEnvironment
 
-class DeviceCapabilities(private val uid: Int, private val netmgr: NetworkManager) :
-        AbstractExecutionContext(SimpleExecutionEnvironment(), netmgr),
+class DeviceCapabilities(private val uid: Int, private val netmgr: NetworkManager, private val codePathFactory: CodePathFactory) :
+        AbstractExecutionContext(SimpleExecutionEnvironment(), netmgr, codePathFactory),
         Speaker {
     private val myUID = IntDeviceUID(uid)
 
@@ -15,6 +17,6 @@ class DeviceCapabilities(private val uid: Int, private val netmgr: NetworkManage
 
     override fun getCurrentTime() =  System.currentTimeMillis()
 
-    override fun instance() = DeviceCapabilities(uid, netmgr)
+    override fun instance() = DeviceCapabilities(uid, netmgr, codePathFactory)
 
 }
