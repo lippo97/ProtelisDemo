@@ -21,6 +21,5 @@ if (anyHood(nbr(leader))) {
 	self.announce("Hello from the leader to its neighbor at "+self.getDeviceUID().getUID());
 } else {
 	// Otherwise, stay silent
-	//self.announce("No one is leader here");
 	false;
 };

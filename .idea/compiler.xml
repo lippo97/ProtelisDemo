@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="protelis-demo.kotlin-utils.main" target="1.10" />
       <module name="protelis-demo.kotlin-utils.test" target="1.10" />
+      <module name="ProtelisDemoUpload.03-java-socket.main" target="1.10" />
+      <module name="ProtelisDemoUpload.03-java-socket.test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
 </project>

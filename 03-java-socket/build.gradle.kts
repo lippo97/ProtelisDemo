@@ -1,11 +1,14 @@
 plugins {
+    kotlin("jvm") version "1.3.40"
     java
     application
 }
 
 dependencies {
+    implementation(kotlin("stdlib"))
+    compile(project(":01-java-helloworld"))
     compile("org.protelis:protelis:12.1.0")
-    compile("org.jgrapht:jgrapht-core:1.3.1")
+    compile("com.uchuhimo:konf:0.13.3")
 }
 
 
