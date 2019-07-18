@@ -11,4 +11,4 @@ class Device(program: ProtelisProgram, uid: Int, val netmgr: MyNetworkManager) {
 
     fun runCycle() = this.vm.runCycle()
     fun sendMessages() = this.netmgr.sendMessages()
-}git
+}
