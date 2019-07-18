@@ -11,7 +11,7 @@
             <option value="$PROJECT_DIR$/01-java-helloworld" />
             <option value="$PROJECT_DIR$/02-kotlin-helloworld" />
             <option value="$PROJECT_DIR$/03-java-socket" />
-            <option value="$PROJECT_DIR$/03-kotlin-socket" />
+            <option value="$PROJECT_DIR$/04-kotlin-socket" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

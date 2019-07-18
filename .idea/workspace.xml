@@ -2,18 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c74e7cfe-5a22-44ef-985d-dd20722d1ce7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/03-java-socket/src/main/java/demo/HelloProtelis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-java-socket/src/main/java/demo/ProtelisConfigSpec.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-java-socket/src/main/java/demo/SocketNetworkManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-java-socket/src/main/java/demo/data/IPv4Host.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-java-socket/src/main/java/demo/data/ProtelisNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-java-socket/src/main/resources/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-java-helloworld/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/01-java-helloworld/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-kotlin-socket/src/main/resources/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/03-kotlin-socket/src/main/resources/config.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-kotlin-socket/src/main/resources/hello.pt" beforeDir="false" afterPath="$PROJECT_DIR$/03-java-socket/src/main/resources/hello.pt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -34,6 +22,8 @@
     <ignored path="$PROJECT_DIR$/03-java-socket/.gradle/" />
     <ignored path="$PROJECT_DIR$/03-java-socket/build/" />
     <ignored path="$PROJECT_DIR$/03-java-socket/out/" />
+    <ignored path="$PROJECT_DIR$/04-kotlin-socket/.gradle/" />
+    <ignored path="$PROJECT_DIR$/04-kotlin-socket/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,95 +49,78 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/HelloProtelis.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-10">
-                  <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/SocketNetworkManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#2147#2148#0" expanded="true" />
-                    <element signature="e#3147#3148#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/data/IPv4Host.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#338#339#0" expanded="true" />
-                    <element signature="e#365#366#0" expanded="true" />
-                    <element signature="e#396#397#0" expanded="true" />
-                    <element signature="e#423#424#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/ProtelisConfigSpec.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#338#347#0" expanded="true" />
-                    <element signature="e#467#475#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/SocketNetworkManager.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="15" column="31" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/HelloProtelis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/SocketNetworkManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="724">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2134#2135#0" expanded="true" />
+                <element signature="e#3134#3135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/data/IPv4Host.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/ProtelisConfigSpec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#338#347#0" expanded="true" />
+                <element signature="e#467#475#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -199,9 +172,7 @@
         <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt" />
         <option value="$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/Device.kt" />
         <option value="$PROJECT_DIR$/01-java-helloworld/build.gradle.kts" />
-        <option value="$PROJECT_DIR$/settings.gradle.kts" />
         <option value="$PROJECT_DIR$/03-java-socket/src/main/java/ProtelisConfigSpec.java" />
-        <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/resources/config.toml" />
         <option value="$PROJECT_DIR$/03-java-socket/build.gradle.kts" />
         <option value="$PROJECT_DIR$/03-java-socket/src/main/java/demo/data/AllArgsConstructor.java" />
         <option value="$PROJECT_DIR$/03-java-socket/src/main/java/demo/data/IPv4Host.java" />
@@ -210,6 +181,8 @@
         <option value="$PROJECT_DIR$/03-java-socket/src/main/java/demo/ProtelisConfigSpec.java" />
         <option value="$PROJECT_DIR$/03-java-socket/src/main/java/demo/HelloProtelis.java" />
         <option value="$PROJECT_DIR$/03-java-socket/src/main/java/demo/SocketNetworkManager.java" />
+        <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/resources/config.toml" />
+        <option value="$PROJECT_DIR$/settings.gradle.kts" />
       </list>
     </option>
   </component>
@@ -232,58 +205,6 @@
             <path>
               <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="01-java-helloworld" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="01-java-helloworld" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="01-java-helloworld" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="01-java-helloworld" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="03-java-socket" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="03-java-socket" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="03-java-socket" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="protelis-demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProtelisDemoUpload" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="03-java-socket" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -379,10 +300,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1058" extended-state="0" />
-    <editor active="true" />
+    <frame x="960" y="22" width="954" height="1052" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13461539" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2781457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,7 +318,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3291536" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33123028" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50106835" side_tool="true" weight="0.3291536" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.32706374" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3291536" />
@@ -578,13 +498,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/resources/config.toml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.9.8/f66792d499a6fea6c7a743558f940e0ebf775ce3/jackson-databind-2.9.8-sources.jar!/com/fasterxml/jackson/databind/deser/BeanDeserializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
@@ -623,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/data/ProtelisNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -658,13 +564,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/resources/hello.pt">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/SocketNetworkManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/DeviceCapabilities.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -712,22 +611,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/HelloProtelis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/SocketNetworkManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="724">
           <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2147#2148#0" expanded="true" />
-            <element signature="e#3147#3148#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#3134#3135#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/SocketNetworkManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/resources/config.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-java-socket/src/main/java/demo/HelloProtelis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>

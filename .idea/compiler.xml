@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="protelis-demo.03-kotlin-socket.main" target="1.10" />
+      <module name="protelis-demo.03-kotlin-socket.test" target="1.10" />
       <module name="protelis-demo.kotlin-utils.main" target="1.10" />
       <module name="protelis-demo.kotlin-utils.test" target="1.10" />
       <module name="ProtelisDemoUpload.03-java-socket.main" target="1.10" />
