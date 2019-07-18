@@ -9,7 +9,7 @@ Protelis requires Java 8+.
 - `01-java-helloworld`: Java implementation using an emulated network;
 - `02-kotlin-helloworld`: Same as above but in Kotlin;
 - `03-java-socket`: Java implementation using sockets to make nodes communicate.
-- `04-kotlin-socket: Same as above but in Kotlin.
+- `04-kotlin-socket`: Same as above but in Kotlin.
 
 ## Usage
 
