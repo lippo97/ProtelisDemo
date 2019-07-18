@@ -1,6 +1,7 @@
 package demo;
 
 import org.jgrapht.Graph;
+import org.jgrapht.Graphs;
 import org.jgrapht.graph.DefaultEdge;
 import org.jgrapht.graph.DefaultUndirectedGraph;
 import org.protelis.lang.ProtelisLoader;
@@ -8,6 +9,7 @@ import org.protelis.vm.ProtelisProgram;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 public class HelloProtelis {
 
@@ -26,20 +28,18 @@ public class HelloProtelis {
         // Initialize some devices
         for (int i = 0; i < N; i++) {
             ProtelisProgram program = ProtelisLoader.parse(protelisModuleName);
-            Device d = new Device(program, i);
+            Device d = new Device(program, i, new EmulatedNetworkManager(new IntDeviceUID(i)));
             devices.add(d);
+            g.addVertex(d);
         }
         // Make the first one leader
         devices.get(0).getDeviceCapabilities().getExecutionEnvironment().put("leader", true);
         // Add the devices into the graph and link them as a ring network
-        g.addVertex(devices.get(0));
-        for (int i = 1; i < devices.size(); i++) {
-            g.addVertex(devices.get(i));
-            g.addEdge(devices.get(i - 1), devices.get(i));
+        for (int i = 0; i < devices.size(); i++) {
+            g.addEdge(devices.get(i), devices.get((i + 1) % devices.size()));
         }
-        g.addEdge(devices.get(devices.size()-1), devices.get(0));
         // Let the devices know the network topology
-        devices.forEach(d -> d.setNetwork(g));
+        devices.forEach(d -> ((EmulatedNetworkManager)d.getNetworkManager()).setNeighbors(Graphs.neighborSetOf(g, d)));
         // Let the devices execute 3 times
         for (int i = 0; i < iterations; i++) {
             devices.forEach(Device::runCycle);

@@ -11,25 +11,18 @@ public class Device {
 
     private final ProtelisVM vm;
     private final DeviceCapabilities deviceCapabilities;
-    private final EmulatedNetworkManager ntmgr;
-    private Graph<Device, DefaultEdge> network;
+    private final MyNetworkManager netmgr;
 
-    public Device(ProtelisProgram program, int uid) {
-        ntmgr = new EmulatedNetworkManager(uid);
-        deviceCapabilities = new DeviceCapabilities(uid, ntmgr);
+    public Device(ProtelisProgram program, int uid, MyNetworkManager netmgr) {
+        this.netmgr = netmgr;
+        this.deviceCapabilities = new DeviceCapabilities(uid, netmgr);
         this.vm = new ProtelisVM(program, deviceCapabilities);
     }
 
-    public EmulatedNetworkManager getNetworkManager() {
-        return ntmgr;
-    }
+    public MyNetworkManager getNetworkManager() { return netmgr; }
 
     public DeviceCapabilities getDeviceCapabilities() {
         return deviceCapabilities;
-    }
-
-    public void setNetwork(Graph<Device, DefaultEdge> network) {
-        this.network = network;
     }
 
     public void runCycle() {
@@ -37,9 +30,6 @@ public class Device {
     }
 
     public void sendMessages() throws IllegalStateException {
-        if (network == null) {
-            throw new IllegalStateException("Uninitialized network.");
-        }
-        this.ntmgr.sendMessages(Graphs.neighborSetOf(network, this));
+        this.netmgr.sendMessages();
     }
 }

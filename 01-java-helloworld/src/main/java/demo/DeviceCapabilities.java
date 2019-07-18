@@ -1,17 +1,23 @@
 package demo;
 
 import org.protelis.lang.datatype.DeviceUID;
+import org.protelis.vm.CodePathFactory;
 import org.protelis.vm.NetworkManager;
 import org.protelis.vm.impl.AbstractExecutionContext;
 import org.protelis.vm.impl.SimpleExecutionEnvironment;
 
 public class DeviceCapabilities extends AbstractExecutionContext implements Speaker {
 
-    private final MyDeviceUID uid;
+    private final IntDeviceUID uid;
 
-    public DeviceCapabilities(final int uid, final NetworkManager ntmgr) {
-        super(new SimpleExecutionEnvironment(), ntmgr);
-        this.uid = new MyDeviceUID(uid);
+    public DeviceCapabilities(final int uid, final NetworkManager netmgr) {
+        super(new SimpleExecutionEnvironment(), netmgr);
+        this.uid = new IntDeviceUID(uid);
+    }
+
+    public DeviceCapabilities(final int uid, final NetworkManager netmgr, CodePathFactory codePathFactory) {
+        super(new SimpleExecutionEnvironment(), netmgr, codePathFactory);
+        this.uid = new IntDeviceUID(uid);
     }
 
     @Override

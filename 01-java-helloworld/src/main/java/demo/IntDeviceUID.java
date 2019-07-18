@@ -2,11 +2,11 @@ package demo;
 
 import org.protelis.lang.datatype.DeviceUID;
 
-public class MyDeviceUID implements DeviceUID, Comparable<MyDeviceUID>{
+public class IntDeviceUID implements DeviceUID, Comparable<DeviceUID>{
 
     private final int uid;
 
-    public MyDeviceUID(final int uid) {
+    public IntDeviceUID(final int uid) {
         this.uid = uid;
     }
 
@@ -15,9 +15,9 @@ public class MyDeviceUID implements DeviceUID, Comparable<MyDeviceUID>{
     }
 
     @Override
-    public int compareTo(MyDeviceUID o) {
+    public int compareTo(DeviceUID o) {
         if (this.getClass() == o.getClass()) {
-            return this.getUID() - o.getUID();
+            return this.getUID() - ((IntDeviceUID)o).getUID();
         } else {
             return 1;
         }
