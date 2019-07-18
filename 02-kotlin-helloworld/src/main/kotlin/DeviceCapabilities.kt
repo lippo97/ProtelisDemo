@@ -3,7 +3,6 @@ package demo
 import org.protelis.vm.CodePathFactory
 import org.protelis.vm.NetworkManager
 import org.protelis.vm.impl.AbstractExecutionContext
-import org.protelis.vm.impl.DefaultTimeEfficientCodePath
 import org.protelis.vm.impl.SimpleExecutionEnvironment
 
 class DeviceCapabilities(private val uid: Int, private val netmgr: NetworkManager, private val codePathFactory: CodePathFactory) :

@@ -2,7 +2,6 @@ package demo
 
 import org.protelis.lang.datatype.DeviceUID
 import org.protelis.vm.CodePath
-import org.protelis.vm.NetworkManager
 import java.io.ObjectInputStream
 import java.io.ObjectOutputStream
 import java.net.ServerSocket

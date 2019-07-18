@@ -1,7 +1,6 @@
 package demo
 
 import com.google.common.hash.Hashing
-import org.protelis.vm.NetworkManager
 import org.protelis.vm.ProtelisProgram
 import org.protelis.vm.ProtelisVM
 import org.protelis.vm.impl.HashingCodePathFactory
@@ -12,4 +11,4 @@ class Device(program: ProtelisProgram, uid: Int, val netmgr: MyNetworkManager) {
 
     fun runCycle() = this.vm.runCycle()
     fun sendMessages() = this.netmgr.sendMessages()
-}
+}git

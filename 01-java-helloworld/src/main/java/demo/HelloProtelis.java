@@ -9,7 +9,6 @@ import org.protelis.vm.ProtelisProgram;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 public class HelloProtelis {
 
@@ -19,10 +18,6 @@ public class HelloProtelis {
     private final static List<Device> devices = new ArrayList<>();
 
     public static void main(String[] args) {
-        useJgrapht();
-    }
-
-    private static void useJgrapht() {
         // Initialize a graph
         Graph<Device, DefaultEdge> g = new DefaultUndirectedGraph<>(DefaultEdge.class);
         // Initialize some devices

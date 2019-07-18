@@ -4,10 +4,13 @@
     <list default="true" id="c74e7cfe-5a22-44ef-985d-dd20722d1ce7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/DeviceCapabilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/DeviceCapabilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/EmulatedNetworkManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/EmulatedNetworkManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/HelloProtelis.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/HelloProtelis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/MyDeviceUID.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/IntDeviceUID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/Device.kt" beforeDir="false" afterPath="$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/Device.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/DeviceCapabilities.kt" beforeDir="false" afterPath="$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/DeviceCapabilities.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/MyNetworkManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/MyNetworkManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt" beforeDir="false" afterPath="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/SocketNetworkManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/SocketNetworkManager.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -30,6 +33,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
@@ -44,16 +50,7 @@
         <entry file="file://$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/Device.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/DeviceCapabilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -80,31 +77,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/MyNetworkManager.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#14#127#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/ProtelisConfigSpec.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/03-kotlin-socket/build.gradle.kts">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/EmulatedNetworkManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+            <state relative-caret-position="187">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding>
                 <element signature="e#705#706#0" expanded="true" />
                 <element signature="e#724#725#0" expanded="true" />
@@ -115,11 +96,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/HelloProtelis.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/DeviceCapabilities.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="30" column="92" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="17" column="124" selection-start-line="17" selection-start-column="124" selection-end-line="17" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -127,17 +126,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Device.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+            <state relative-caret-position="204">
+              <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/MyNetworkManager.java">
+        <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Speaker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+            <state relative-caret-position="51">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding>
+                <element signature="e#84#85#0" expanded="true" />
+                <element signature="e#127#128#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,7 +170,6 @@
         <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/ProtelisConfigSpec.kt" />
         <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/ModernDevice.kt" />
         <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/SocketNetworkManager.kt" />
-        <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt" />
         <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/resources/config.toml" />
         <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/Speaker.kt" />
         <option value="$PROJECT_DIR$/kotlin-utils/build.gradle.kts" />
@@ -183,9 +185,10 @@
         <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/MyDeviceUID.java" />
         <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/DeviceCapabilities.java" />
         <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/MyNetworkManager.java" />
-        <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Device.java" />
-        <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/HelloProtelis.java" />
         <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/EmulatedNetworkManager.java" />
+        <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/HelloProtelis.java" />
+        <option value="$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Device.java" />
+        <option value="$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt" />
       </list>
     </option>
   </component>
@@ -308,6 +311,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.kotlinCompiler" />
   </component>
   <component name="RecentsManager">
@@ -378,6 +382,7 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" visible="true" weight="0.3291536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
@@ -386,7 +391,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291536" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3291536" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291536" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32706374" />
       <window_info anchor="bottom" id="Messages" order="11" />
@@ -402,17 +407,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Speaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding>
-            <element signature="e#84#85#0" expanded="true" />
-            <element signature="e#127#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.protelis/protelis-interpreter/12.1.0/35fe74ff7846827d5d1695bca59174c286a299a5/protelis-interpreter-12.1.0-sources.jar!/org/protelis/vm/impl/AbstractExecutionContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -457,31 +451,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/build.gradle.kts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/IntDeviceUID.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/DeviceCapabilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -516,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Device.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/HelloProtelis.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -536,7 +502,7 @@
     <entry file="file://$PROJECT_DIR$/02-kotlin-helloworld/src/main/kotlin/Device.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -547,10 +513,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/EmulatedNetworkManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="24" column="28" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+        <state relative-caret-position="187">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
           <folding>
             <element signature="e#705#706#0" expanded="true" />
             <element signature="e#724#725#0" expanded="true" />
@@ -562,8 +531,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/HelloProtelis.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/DeviceCapabilities.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="30" column="92" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Device.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-java-helloworld/src/main/java/demo/Speaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding>
+            <element signature="e#84#85#0" expanded="true" />
+            <element signature="e#127#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-kotlin-socket/src/main/kotlin/HelloProtelis.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="17" column="124" selection-start-line="17" selection-start-column="124" selection-end-line="17" selection-end-column="124" />
         </state>
       </provider>
     </entry>

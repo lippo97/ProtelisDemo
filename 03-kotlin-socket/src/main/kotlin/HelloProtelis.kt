@@ -15,7 +15,7 @@ class Main {
     fun hello() {
         // Initialize some nodes.
         nodes.forEach {
-            val socketNetworkManager = SocketNetworkManager(IntDeviceUID(it.id), it.hostandport.port, it.neighbors).also { it.listen() }
+            val socketNetworkManager = SocketNetworkManager(IntDeviceUID(it.id), it.hostandport.port, it.neighbors).apply { listen() }
             val program = ProtelisLoader.parse(protelisModuleName)
             val node = Device(program, it.id, socketNetworkManager)
             if (it.leader) {

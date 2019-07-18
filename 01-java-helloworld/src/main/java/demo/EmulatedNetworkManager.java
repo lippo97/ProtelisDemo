@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableSet;
 import java8.util.Sets;
 import org.protelis.lang.datatype.DeviceUID;
 import org.protelis.vm.CodePath;
-import org.protelis.vm.NetworkManager;
 
 import java.util.*;
 
